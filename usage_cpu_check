@@ -1,0 +1,29 @@
+#!/bin/bash
+
+set -e
+
+log_msg() {
+	date
+	echo " $(date)-----$1 "
+}
+
+disk_usage() {
+	df -h | grep '/$' | awk '{print $5}'
+}
+
+#log_msg " Hello, user, your disk usage is $(disk_usage) "
+
+
+#CPU_usage() {
+#	mpstat | awk '{print$4+$5+$6+$7+$8+$9+$10+$11+$12}' | tail -1
+#}
+#log_msg " Your CPU usage is $(CPU_usage)% "
+
+#script to check cpu usage
+
+CPU_usage() {
+	top -b -n1 | grep "^%Cpu" | awk '{print $2+$4+$6}'
+}
+
+log_msg  " Hello, user, your disk usage is $(disk_usage), cpu usage: $(CPU_usage)% "
+
