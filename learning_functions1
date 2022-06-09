@@ -1,0 +1,19 @@
+#!/bin/bash
+
+amount=200
+amount2=300
+
+if [ $amount -gt $amount2 ]; then
+
+	timedatectl set-timezone Africa/Bamako
+#	echo "$amount2 is very good amount"
+else
+
+set-timezone () {
+	timedatectl set-timezone Asia/Yerevan
+}
+
+set-timezone
+
+fi
+
