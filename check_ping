@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+string="Hello"
+echo $string" world "
