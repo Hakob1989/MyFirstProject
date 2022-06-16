@@ -1,0 +1,6 @@
+#!/bin/bash
+
+function msg_log {
+echo "Hello Hakob"
+}
+msg_log
