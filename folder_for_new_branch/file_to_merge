@@ -1,0 +1,21 @@
+#!/bin/bash
+
+num() {
+
+num_a=200
+num_b=300
+
+if [ $num_a -gt $num_b ]; then
+
+	echo  "$num_a is less then $num_b!"
+else
+       	echo "$num_a is greater then $num_b!";
+fi
+
+}
+
+num
+
+echo "Hello World"
+
+num
