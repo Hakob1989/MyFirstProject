@@ -1,0 +1,7 @@
+#!/bin/bash
+
+get_msg() {
+echo "Hello world"
+}
+
+get_msg
