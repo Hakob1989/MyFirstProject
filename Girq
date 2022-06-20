@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+a='This string'
+( a=banana; mkdir $a )
+echo $a
+# => 'This string'
+ls
+# => ...
+# => banana/

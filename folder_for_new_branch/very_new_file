@@ -4,3 +4,20 @@ function msg_log {
 echo "Hello Hakob"
 }
 msg_log
+msg_log
+msg_log
+msg_log
+
+
+text1=Tetr
+text2=Girq
+
+if [ $text1 > $text2 ]; then
+
+	
+	echo "Heraxos ($text1 + $text2 )"
+elif
+	[ $text1 < $text2 ]; then
+	echo "Avto ($text1 - $text2 )"
+
+fi
