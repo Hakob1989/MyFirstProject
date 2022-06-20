@@ -16,6 +16,6 @@ fi
 
 num
 
-echo "Hello World"
+#echo "Hello World"
 
 num
